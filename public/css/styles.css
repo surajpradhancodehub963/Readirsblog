@@ -1,0 +1,211 @@
+body{
+    background-color: #000000;
+    padding: 0px 160px;
+}
+.navbar{
+    background-color: #000000;
+    padding: 20px 0px;
+}
+.navbar h4{
+    border: solid 2px #eb0000;
+    padding: 10px;
+    background-color: #eb0000;
+}
+.navbar h4 a{
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0px 20px;
+}
+.navbar ul li a{
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    transition: 0.6s;
+}
+.navbar ul li a:hover{
+    color: #eb0000;
+}
+#hero_text h1{
+    font-size: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-left: 0px;
+}
+#posts{
+    margin-top: 20px;
+}
+.blog_card_text{
+    padding: 5px 10px;
+}
+.blog_card_text p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-family: 'Merriweather', serif;
+    transition: 0.3s;
+}
+.blog_card_text h4{
+    font-size: 26px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    font-family: 'Merriweather', serif;
+    transition: 0.3s;
+}
+.blog_card_button{
+    background-color: #eb0000;
+    color: #ffffff;
+    transition: 0.6s;
+}
+.blog_card_button:hover{
+    background-color: #ffffff;
+    color: #eb0000;
+}
+.blog_card_text h4:hover,
+.blog_card_text p:hover{
+    color: #eb0000;
+}
+#subscribe{
+    display: flex;
+}
+.footer_part1{
+    background-color: #eb0000;
+    height: 300px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_part1 h4{
+    font-size: 32px;
+    width: 200px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+}
+.footer_part2{
+    width: 100%;
+    margin-left: 20px;
+    background-color: #161515;
+    height: 300px;
+    padding: 30px;
+}
+.form_field,
+.form_control,
+.form_control_file{
+    display: flex;
+    flex-direction: column;
+}
+.footer_part2 form label,
+.form_control label,
+.form_control_file label{
+    color: #ffffff;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+}
+.footer_part2 form input,
+.form_control input{
+    background-color: #161515;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+}
+.footer_part2 form input:focus,
+.form_control input:focus{
+    outline: none;
+}
+.form_field button{
+    background: #eb0000;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+#addblog h1{
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+}
+#addblog form{
+    padding: 30px 60px;
+    background-color: #161515;
+}
+.form_control textarea{
+    white-space:break-spaces;
+}
+.form_control textarea:focus{
+    outline: none;
+}
+.form_control_file input{
+    background-color: #161515;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+#single_blog_page{
+    width: 40%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+#single_blog_page h5{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+}
+#single_blog_page h4{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+}
+#single_blog_page p{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+    color: #ffffff; 
+}
+footer h4{
+    color: #ffffff;
+    font-size: 22px;
+}
+@media (max-width:990px) and (min-width:769px) {
+    body{
+        padding: 0px 32px;
+    }
+}
+@media (max-width:768px) and (min-width:569px) {
+    body{
+        background-color: #000000;
+        padding: 0px 22px;
+    }
+}
+@media (max-width:568px) {
+    body{
+        background-color: #000000;
+        padding: 0px 12px;
+    }
+}
