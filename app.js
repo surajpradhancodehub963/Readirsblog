@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const path = require("node:path");
+const path = require('path');
 const { connectDatabase, Subscriber, Blog } = require("./config/mongo");
 const multer = require("multer");
 
