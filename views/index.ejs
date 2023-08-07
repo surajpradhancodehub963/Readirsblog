@@ -5,20 +5,24 @@
 <section id="posts">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3 blog_card">
-        <img
-          src="https://static.wixstatic.com/media/e1bade_23184f3845c3430c9243f61c3ce45293~mv2.jpg/v1/fill/w_548,h_548,fp_0.50_0.50,q_90,enc_auto/e1bade_23184f3845c3430c9243f61c3ce45293~mv2.jpg"
-          alt=""
-          width="100%"
-          height="300px"
-        />
-        <div class="blog_card_text mt-3">
-          <p class="mb-2">written by:Name</p>
-          <h4>Blog Tittle</h4>
-          <p>Blog post some context</p>
-          <button class="btn blog_card_button">Readmore</button>
+      <% data.map((a)=>{ %>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3 blog_card">
+          <img
+            src="/uploads/<%= a.blogPhoto %>"
+            alt=""
+            width="100%"
+            height="300px"
+          />
+          <div class="blog_card_text mt-3">
+            <p class="mb-2">written by:<%=a.fullname %></p>
+            <h4><%= a.blogTittle %></h4>
+            <p><%= a.blogtext.slice(0,70) %>......</p>
+            <button class="btn blog_card_button">
+              <a href="/single/<%= a._id.toHexString() %>">Readmore</a>
+            </button>
+          </div>
         </div>
-      </div>
+      <% }); %>
     </div>
   </div>
 </section>

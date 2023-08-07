@@ -1,7 +1,7 @@
 <%- include('./partials/header.ejs') %>
 <section id="addblog">
     <h1>Write your thoughts</h1>
-    <form action="/addblog" method="post">
+    <form action="/addblog" method="post" enctype="multipart/form-data">
         <div class="form_control mb-5">
             <label for="fullname">Full name<span style="color: red">*</span></label>
             <input type="text" id="fullname" name="fullname" />
@@ -21,6 +21,9 @@
         <div class="form_control_file mb-5">
             <label for="blog_photo" class="mb-2">Upload article image<span style="color: red">*</span></label>
             <input type="file" name="blogPhoto" id="blog_photo">
+        </div>
+        <div class="mb-5">
+            <button type="submit" class="form_control_button">Submit</button>
         </div>
     </form>
 </section>

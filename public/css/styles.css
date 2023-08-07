@@ -70,17 +70,27 @@ body{
 }
 .blog_card_button{
     background-color: #eb0000;
-    color: #ffffff;
     transition: 0.6s;
+}
+.blog_card_button a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
 }
 .blog_card_button:hover{
     background-color: #ffffff;
+    color: #eb0000;
+}
+.blog_card_button a:hover{
     color: #eb0000;
 }
 .blog_card_text h4:hover,
 .blog_card_text p:hover{
     color: #eb0000;
 }
+
+/* Subscribe element css  */
+
 #subscribe{
     display: flex;
 }
@@ -164,6 +174,20 @@ body{
     border: 2px solid #ffffff;
     color: #ffffff;
 }
+.form_control_button{
+    background: #eb0000;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+/* Single_blog_page */
+
 #single_blog_page{
     width: 40%;
     margin-left: 50%;
@@ -188,10 +212,45 @@ body{
     font-family: 'Merriweather', serif;
     color: #ffffff; 
 }
+/* Sucessfull submited */
+#successfull{
+    background-color: #161515;
+    padding: 20px 0px;
+    width: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+#successfull h4{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+#successfull i{
+    color: #eb0000;
+    font-size: 46px;
+}
+.submitted_button{
+    background-color: #eb0000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+}
+.submitted_button a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+/* footer Page */
 footer h4{
     color: #ffffff;
     font-size: 22px;
 }
+
+
+/* Media Querries */
 @media (max-width:990px) and (min-width:769px) {
     body{
         padding: 0px 32px;
